@@ -27,10 +27,10 @@
           <nav class="navigation">
             <ul class="address-list list">
               <li class="address-list-li">
-                <a href="index.html" class="subpages link">Agencja</a>
+                <a href="index.html" class="subpages link active">Agencja</a>
               </li>
               <li class="address-list-li">
-                <a href="portfolio.html" class="subpages link">Portfolio</a>
+                <a href="portfolio.html" class="subpages link ">Portfolio</a>
               </li>
               <li class="address-list-li"><a href="#kontakt" class="subpages link">Kontakt</a></li>
             </ul>
@@ -57,7 +57,7 @@
         <section class="section container headline-main-div">
           <h1 class="headline-main">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
           <div class="btn-prim-div">
-            <button type="button" class="btn-primary">Zamów usługę</button>
+            <button type="button" class="btn-primary" data-modal-open>Zamów usługę</button>
           </div>
         </section>
       </div>
@@ -118,15 +118,18 @@
 
         <ul class="main-imgs list">
           <li class="main-imgs-li">
-            <img src="images/job/box1.jpg" alt="komputer" width="370" height="294" />
+            <img class="main-image" src="images/job/box1.jpg" alt="komputer" width="370" height="294" />
+            <span class="main-imgs-text" width="370" height="70px">Aplikacje komputerowe</span>
           </li>
 
           <li class="main-imgs-li">
-            <img src="images/job/box2.jpg" alt="laptop" width="370" height="294" />
+            <img class="main-image" src="images/job/box2.jpg" alt="laptop" width="370" height="294" />
+            <span class="main-imgs-text" width="370" height="70px">Aplikacje mobilne</span>
           </li>
 
           <li class="main-imgs-li">
-            <img src="images/job/box3.jpg" alt="tablet" width="370" height="294" />
+            <img class="main-image" src="images/job/box3.jpg" alt="tablet" width="370" height="294" />
+            <span class="main-imgs-text" width="370" height="70px">Rozwiązania graficzne</span>
           </li>
         </ul>
       </section>
@@ -407,5 +410,12 @@
          </ul>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal"><svg type="button" class="close-btn" data-modal-close width="18" height="18">
+        <use href="./images/icons.svg#icon-x"></use></button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
