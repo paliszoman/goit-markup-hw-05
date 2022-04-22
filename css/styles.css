@@ -560,8 +560,10 @@ transform: box-shadow;}
 }
 .hidden-box:hover .overlay{
   transform: translateY(0);
-  transform: color, translateY(0);
+ 
 }
+
+
 
 /* ============================================== MODAL BOX =================================================== */
 .backdrop{
